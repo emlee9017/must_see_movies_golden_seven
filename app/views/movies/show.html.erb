@@ -1,0 +1,19 @@
+<h1> Director <%= @director.id %> </h1>
+
+<dl clss="dl-horizontal">
+  <dt>DOB: </dt>
+  <dd><%= @director.dob %></dd>
+
+  <dt>Name: </dt>
+  <dd><%= @director.name %></dd>
+
+  <dt>Bio: </dt>
+  <dd><%= @director.bio %></dd>
+
+  <dt></dt>
+  <dd><img src="<%= @director.image_url %>" width="360"></dd> 
+</dl>
+
+<a href="http://localhost:3000/directors">Back</a>
+<a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete</a>
+<a href="http://localhost:3000/directors/<%= @director.id %>/edit">Edit</a>
