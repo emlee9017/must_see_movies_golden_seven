@@ -1,19 +1,22 @@
-<h1> Director <%= @director.id %> </h1>
+<h1> Movie <%= @movie.id %> </h1>
 
 <dl clss="dl-horizontal">
-  <dt>DOB: </dt>
-  <dd><%= @director.dob %></dd>
+  <dt>Title: </dt>
+  <dd><%= @movie.title %></dd>
 
-  <dt>Name: </dt>
-  <dd><%= @director.name %></dd>
+  <dt>Year: </dt>
+  <dd><%= @movie.year %></dd>
 
-  <dt>Bio: </dt>
-  <dd><%= @director.bio %></dd>
+  <dt>Duration: </dt>
+  <dd><%= @movie.duration %></dd>
+
+  <dt>Description: </dt>
+  <dd><%= @movie.description %></dd>
 
   <dt></dt>
-  <dd><img src="<%= @director.image_url %>" width="360"></dd> 
+  <dd><img src="<%= @movie.image_url %>" width="360"></dd> 
 </dl>
 
-<a href="http://localhost:3000/directors">Back</a>
-<a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete</a>
-<a href="http://localhost:3000/directors/<%= @director.id %>/edit">Edit</a>
+<a href="http://localhost:3000/movies">Back</a>
+<a href="http://localhost:3000/delete_movie/<%= @movie.id %>">Delete</a>
+<a href="http://localhost:3000/movies/<%= @movie.id %>/edit">Edit</a>
